@@ -1,35 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lato:wght@300;400;700&family=Lobster&family=Open+Sans:wght@300&family=Plus+Jakarta+Sans:wght@200&family=Roboto:wght@100;300&family=Work+Sans:ital,wght@0,300;1,300&display=swap');
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: "Open Sans";
     
 }
 body{
-    background-image: url(https://wallpapercave.com/wp/wp9497547.jpg);
+    background-color: #131517;
+    background-image:url(https://wallpapers-hub.art/wallpaper-images/38127.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size:cover;
+}
+header{
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height:75px;
+    background-color:rgba(15, 13, 13, 0.662);
+    opacity:1;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
+/** LOGO DE HEADER**/
+.logo-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+}
+.logo {
+   width: 100px;
+   height: 75px;
+   background-position: center center;   
+}
+/**********/
+
+/** ACA EMPIEZA EL NAV DE HEADER **/
 .nav-bar-container {
     display:flex;
-    justify-content: space-between;
-    background-color: black;
-}
-
-.img img{
-    width:70px;
-    margin-left:15px;
-    background-color: white;
-    border-radius: 30%;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    background-color:rgba(16, 16, 16, 0.919);
 }
 .menu{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 15px;
-    margin-right:15px;
     list-style: none;
-    
 }
 .menu-item{
     /*background-color: white;*/
@@ -54,11 +81,10 @@ body{
     display: flex;
     flex-direction: column;
     position:absolute;
-    top:74px;
+    top:75px;
 }
 .submenu-item{
-    
-    background-color: black;
+    background-color: rgba(15, 13, 13, 0.662);
     height: 0;
     visibility: hidden;
     opacity: 0; 
@@ -80,5 +106,321 @@ background-color: white;
 .submenu-item:hover .menu-link{
    color:black;
 }
+/** ACA TERMINA NAV HEADER **/
+
+/** ACA EMPIEZA ITEMS RIGHT HEADER **/
+.items-right{
+    display:flex;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100%;
+    margin-right:40px;
+}
+.items-right input{
+    width:180px;
+    height: 30px;
+}
+.fa-solid.fa-user, .fa-solid.fa-cart-shopping{
+    color:white;
+    cursor:pointer;
+}
+/** ACA TERMIA ITEMS RIGHT HEADER **/
+
+/** ACA EMPIEZA INFO PRINCIPAL CONTAINER **/
+.info-principal-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 700px;
+    font-size: 2rem;
+    margin-bottom:40px;
+    background-image: url(../img/wallpaper6.jpg);
+    background-size: cover;
+    background-position: 10%;
+    background-repeat: no-repeat;
+
+}
+.info-principal{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    gap: 10px;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    gap:6px;
+    width:500px;
+    height: 480px;;
+}
+.contenido h1{
+    margin-bottom: 50px;
+    font-weight: bolder;
+    font-size: 5rem;
+    letter-spacing: 3px;
+    color:white
+}
+.contenido p{
+    color: #c2cad2;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height:4vh;
+    border-top:1px solid #343a40;
+    padding: 20px 0;
+}
+.contenido b{
+    color:#ffffff;
+}
+.contenido h4{
+    color:#ced4da;
+    border-top:1px solid #343a40;
+    padding:20px 10px 0 0;
+    font-size: 1rem;
+}
+.btnMasinformacion, .btnAsesor{
+    border:1px solid #e9ecef;
+    border-radius: 3px;
+    background-color: #131517;
+    padding:15px;
+    color:white;
+    cursor:pointer;
+    opacity:0.9;
+}
+.btnAsesor:hover, .btnMasinformacion:hover{
+    transition: all 0.3s;
+    border:1px solid greenyellow;
+}
+.contacto-container{
+    width:500px;
+    border:1px solid #343a40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    /*background-image:url(https://bestwallpapers.in/wp-content/uploads/2018/04/keyboard-blue-backlit-bokeh-4k-wallpaper-3840x2400.jpg);*/
+    background-size: cover;  
+}
+
+.nombre-apellido{
+    display: flex;
+    justify-content: space-between;
+}
+.contacto-container h4{
+    color:white;
+    font-weight:bold;
+    
+}
+
+.datos-personales{
+    padding:30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap:10px;
+    width:80%;
+    height: 80%;
+    
+}
+::placeholder{
+    opacity: 1;
+    font-weight: 900;
+    color:black;
+}
+.datos-personales input, textarea, button{
+    opacity:0.5;
+    background-color:#ffffffff;
+}
+.datos-personales input{
+    height: 35px;
+}
+.datos-personales button{
+height: 45px;
+background-color: yellowgreen;
+border-radius: 6px;
+border: 0px solid yellowgreen;
+font-size: large;
+font-weight: bolder;
+letter-spacing: 2px;
+opacity:1;
+
+
+}
+   
+
+/** ACA TERMINA INFO PRINCIPAL **/
+
+/** ACA EMPIEZA INFO ADICIONAL **/
+.info-adicional-container{
+    width:100%;
+    height: 555px;
+    background-size:100%;
+    background-repeat: no-repeat;
+   /* background-image: url(../img/613.jpg);*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenido-adicional{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    justify-content: center;
+    
+}
+.contenido-adicional h3{
+    color:white; 
+}
+.contenido-adicional p{
+    color: #c2cad2;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    line-height:5vh;
+    width: 1000px;
+    height: auto;
+    word-wrap: break-word;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #343a40;
+}
+
+/** ACA TERMINA INFO ADICIONAL **/
+
+/** ACA EMPIEZA PRODUCTOS **/
+.productos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    gap:30px;
+    margin-top:70px;
+
+}
+.fa-solid.fa-shield, .fa-solid.fa-display, .fa-solid.fa-comments, .fa-solid.fa-hand-holding-dollar{
+    color:white;
+    font-size: 70px;
+}
+.producto h3{
+    color:#ffffff;
+}
+.producto p{
+    
+    margin-top:5px;
+    text-align: center;
+    height: auto;
+    color:#c2cad2;
+}
+.producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    gap:7px;
+    border-radius: 10px;
+    height: 320px;
+    width: 250px;
+}
+.fa-solid.fa-shield:hover, .fa-solid.fa-display:hover, .fa-solid.fa-comments:hover, .fa-solid.fa-hand-holding-dollar:hover{
+    color:greenyellow;
+}
+/** ACA TERMINA PRODUCTOS **/
+
+/** ACA EMPIEZA ELEMENTOS FOOTER **/
+.elementos-footer-container{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.elementos-footer{
+    display: flex;
+    justify-content: space-between;
+    gap:100px;
+    padding:30px;
+    flex-wrap: wrap;
+    
+    
+}
+.redes h4, .contacto h4, .mapa h4{
+    color:white;
+    font-size:x-large;
+    margin-bottom:20px;
+}
+/** CONTACTO **/
+.contacto{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+.contacto p{
+    color:white;
+    font-weight: bolder;
+}
+.fa-solid.fa-envelope{
+    display: flex;
+    gap:8px;
+    color:white;
+}
+.fa-brands.fa-whatsapp{
+    display: flex;
+    gap:8px;
+    color: yellowgreen;
+}
+/** TERMINA CONTACTO **/
+
+/** REDES **/
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    gap:20px;
+}
+.fa-brands.fa-instagram,.fa-brands.fa-facebook,.fa-brands.fa-twitter,.fa-brands.fa-youtube{
+    color:white;
+    font-size: 5vh;
+}
+.fa-brands.fa-instagram:hover{
+    transition: all 0.3s;
+    transform: scale(1.2);
+    color:rgb(253, 86, 44);
+}
+
+.fa-brands.fa-facebook:hover{
+    transition: all 0.3s;
+    transform:  scale(1.2);
+    color:#3b5998;
+}
+.fa-brands.fa-twitter:hover{
+    transition: all 0.3s;
+    transform: scale(1.2);
+    color:#00acee;
+}
+.fa-brands.fa-youtube:hover{
+    transition: all 0.3s;
+    transform: scale(1.2);
+    color:rgb(225, 14, 14);
+}
+/** TERMINA REDES **/
+
+
+
+
+
+
+
 
 

@@ -5,38 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Portfolio Facundo Ibañez</title>
 </head>
 <body>
-    <nav class="nav-bar-container">
-        <div class="img">
-            <img src="./img/platform.png" alt="img logo">
+    <header>
+        <div class="logo-header">
+            <img class="logo"src="./img/LISZT.png" alt="img logo">
         </div>
-        <ul class="menu">
-            <li class="menu-item"><a class="menu-link" href="#">Inicio</a></li>
-            <li class="menu-item container"><a class="menu-link" href="#">Servicios</a>
-                <ul class="submenu">
-                   <li class="submenu-item"><a class="menu-link"href="#">Servicio 1</a></li>
-                   <li class="submenu-item"><a class="menu-link"href="#">Servicio 2</a></li>
-                   <li class="submenu-item"><a class="menu-link"href="#">Servicio 3</a></li>
-                </ul>
-            </li>
-            <li class="menu-item"><a class="menu-link" href="#">Clientes</a>
-                <ul class="submenu">
-                    <li class="submenu-item"><a class="menu-link"href="#">Cliente 1</a></li>
-                    <li class="submenu-item"><a class="menu-link"href="#">Cliente 2</a></li>
-                    <li class="submenu-item"><a class="menu-link"href="#">Cliente 3</a></li>
-                </ul>
-            </li>
-            <li class="menu-item"><a class="menu-link" href="#">Contacto</a>
-            </li>
-        </ul>
-    </nav>
+        <div class="nav-bar-container">
+            <ul class="menu">
+                <li class="menu-item"><a class="menu-link" href="#">Inicio</a></li>
+                <li class="menu-item container"><a class="menu-link" href="#">Servicios</a>
+                    <ul class="submenu">
+                       <li class="submenu-item"><a class="menu-link"href="#">Servicio 1</a></li>
+                       <li class="submenu-item"><a class="menu-link"href="#">Servicio 2</a></li>
+                       <li class="submenu-item"><a class="menu-link"href="#">Servicio 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a class="menu-link" href="#">Clientes</a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a class="menu-link"href="#">Cliente 1</a></li>
+                        <li class="submenu-item"><a class="menu-link"href="#">Cliente 2</a></li>
+                        <li class="submenu-item"><a class="menu-link"href="#">Cliente 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a class="menu-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <div class="items-right">
+            <input type="search" placeholder="Buscar"> 
+            <i class="fa-solid fa-user"><a href="#"></a></i>   
+            <i class="fa-solid fa-cart-shopping"><a href="#"></a></i>
+        </div>
+    </header>
+    <main>
+        <section class="info-principal-container">
+            <div class="info-principal">
+                <div class="contenido">
+                    <h1>Bienvenido a LISZT!</h1>
+                    <p><b>Conecta tu proyecto al mundo.</b> Con nosotros podras concretar tus ideas, expandir y elevar tu negocio o emprendimiento al siguiente nivel.
+                    Contamos con las mejores soluciones para tus necesidades web. 
+                    </p>
+                    <h4>Conoce nuestras propuestas!</h4>
+                    <div class="buttons">
+                        <button class="btnMasinformacion">Mas Informacion</button>
+                        <button class="btnAsesor">Contactar con un asesor</button>
+                    </div>
+                </div>
+                <div class="contacto-container"> 
+                    <h4>SOLICITA PRESUPUESTO</h4>
+                    <form class="datos-personales">
+                        <div class="nombre-apellido">
+                            <input type="text" id="nombre" placeholder="Nombre">
+                            <input type="text" id="apellido" placeholder="Apellido">
+                        </div>
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="number" id="number" placeholder="Telefono">
+                        <textarea name="descripcion" id="" cols="30" rows="10" placeholder="Indicanos tu pagina web y comentanos una idea general de tu proyecto."></textarea>
+                        <button class="btnEnviar">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="info-adicional-container">
+            <div class="contenido-adicional">
+                <h3>Responsive Design</h3>
+                <p>En LISZT nos enfocamos en que tu proyecto sea atractivo visualmente, de funcionalidad ágil y optima con un diseño adaptable a cada dispositivo.    
+                </p>
+                <h3>Expandi tu horizonte</h3>
+                <p>Nuestros expertos en desarrollo web y Marketing lograran que tu web sea exitosa, aumentes tus ventas, ampliaras el horizonte de clientes y captaras miles de nuevos interesados en tu proyecto, dandole una excelente imagen a tu empresa, negocio o institución.</p>
+                <h3>Asesoramiento</h3> 
+                <p>Te ofrecemos seguimiento personalizado, variedad de diseños segun la propuesta y necesidades que tengas.
+                    Servicios de post-entrega tales como mantenimiento de tu web, asesoramiento de novedaedes y asi mantener tu pagina actualizada segun el mercado, y mas beneficios exlusivos para que tu marca transmita confianza, seguridad, originalidad y que por sobre todo sea atractiva y funcional.
+                </p>
+            </div>
+        </section>
+        <div class="productos-container">
+            
+                <div class="producto">
+                    <i class="fa-solid fa-shield"></i>                    <h3>Seguridad</h3>
+                    <p>Seguridad, protección y confianza para tus datos y de tus clientes.</p>
+                </div>
+                <div class="producto">
+                    <i class="fa-solid fa-display"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Diseño adaptable para dispositivos y pantallas moviles o de escritorio.</p>  
+                </div>
+                <div class="producto">
+                    <i class="fa-solid fa-comments"></i>
+                    <h3>Rápida respuesta</h3>
+                    <p>Nuestros asesores se pondran en contacto contigo a la brevedad.</p>
+                </div>
+                <div class="producto">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <h3>Facilidades de pago</h3>
+                    <p>Ofrecemos diversos metodos de pago. Consulta y elegí el mas acorde a vos.</p>
+                </div>
+        </div>
+    </main>
+    <footer>
+        <div class="elementos-footer-container">
+            <div class="elementos-footer">
+                <div class="contacto">
+                    <h4>Contacto</h4>
+                    <i class="fa-solid fa-envelope"><p>facundoiba95@gmail.com</p></i>
+                <i class="fa-brands fa-whatsapp"><p>3513230038</p></i>
     
-
-
-    
-    
+                </div>
+                <div class="redes">
+                    <h4>Redes</h4>
+                    <div class="icons">
+                        <a href="https://www.instagram.com/facundoiba_/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/FA.TDTNC"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="mapa">
+                    <h4>Ubicación</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6807.446551468836!2d-64.18172034317877!3d-31.44928434494059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a380353f6649%3A0xec02c81a5950fd3b!2sClub%20Atl%C3%A9tico%20Talleres%20(C.A.T.)!5e0!3m2!1ses!2sar!4v1653583989169!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
 </body>
 </html>
