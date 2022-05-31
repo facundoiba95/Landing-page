@@ -426,9 +426,7 @@ opacity:1;
 /** HASTA ACA ES DESIGN ESCRITORIO **/
 
 @media (max-width: 426px){
-    header{
-        
-    }
+   
     .logo-header{
         display: none;
     }
@@ -451,7 +449,7 @@ opacity:1;
         display: none;
     }
     header{
-        height: 30px;
+        height: 50px;
         background-color: black;
         justify-content: flex-start;
         margin-left: 10px;
@@ -468,6 +466,7 @@ opacity:1;
     }
     .fa-solid.fa-bars{
         color:white;
+        font-size: 2rem;
     }
     
     .menu-hamburguesa input{
