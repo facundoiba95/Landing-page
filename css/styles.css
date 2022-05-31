@@ -416,11 +416,95 @@ opacity:1;
 }
 /** TERMINA REDES **/
 
+/** MOBILE **/
 
+ /** ACA EMPIEZA NAV-BAR MOBILE **/
+.nav-bar-mobile-container{
+    display: none;
+}
 
+/** HASTA ACA ES DESIGN ESCRITORIO **/
 
+@media (max-width: 376px){
+    header{
+        
+    }
+    .logo-header{
+        display: none;
+    }
+    .nav-bar-container{
+        display: none;
+    }
+    .items-right{
+        display: none;
+    }
+    .info-principal-container{
+        display: none;
+    }
+    .info-adicional-container{
+        display: none;
+    }
+    .productos-container{
+        display: none;
+    }
+    .elementos-footer-container{
+        display: none;
+    }
+    header{
+        height: 30px;
+        background-color: black;
+        justify-content: flex-start;
+        margin-left: 10px;
+        position: sticky;
+        top:0;
+    }
+    body{
+        background-color: black;
+        background-image: none;
+    }
+   
+    .nav-bar-mobile-container{
+       display: flex;
+    }
+    .fa-solid.fa-bars{
+        color:white;
+    }
+    
+    .menu-hamburguesa input{
+        display: none;
+    }
+    .menu-container:checked ~ .menu-mobile{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background-color: black;
+        padding:8px;
+        gap:8px;
+        
+    }
+    .menu-mobile{
+        display: none;
+        position: absolute;
+    }
+    .menu-link-mobile{
+        text-decoration: none;
+        color: white;
+        font-size: 0.7rem;
+    }
+    .submenu-mobile{
+        list-style: none;
+        display: none;
+    }
+   
+   
+    
+    
+   
+   
+   
+  
 
-
+}
 
 
 
