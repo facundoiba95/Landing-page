@@ -414,6 +414,16 @@ opacity:1;
     transform: scale(1.2);
     color:rgb(225, 14, 14);
 }
+.info-principal-mobile{
+    display: none;
+}
+.nav-bar-mobile-container{
+    display: none;
+}
+.productos-mobile-container{
+    display: none;
+}
+
 /** TERMINA REDES **/
 
 /** MOBILE **/
@@ -446,8 +456,29 @@ opacity:1;
         display: none;
     }
     .elementos-footer-container{
-        display: none;
+        justify-content: center;
+        align-items: center;
     }
+    .elementos-footer{
+        justify-content: center;
+        align-items: center;
+    }
+    .contacto{
+        align-items: center;
+    }
+    .mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
     header{
         height: 50px;
         background-color: black;
@@ -460,7 +491,6 @@ opacity:1;
         background-color: black;
         background-image: none;
     }
-   
     .nav-bar-mobile-container{
        display: flex;
     }
@@ -478,8 +508,7 @@ opacity:1;
         list-style: none;
         background-color: black;
         padding:8px;
-        gap:8px;
-        
+        gap:20px;
     }
     .menu-mobile{
         display: none;
@@ -488,12 +517,85 @@ opacity:1;
     .menu-link-mobile{
         text-decoration: none;
         color: white;
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
     .submenu-mobile{
         list-style: none;
         display: none;
     }
+    /* ACA TERMINA NAVBAR MOBILE */
+
+    /* ACA EMPIEZA INFO PRINCIPAL MOBILE CONTAINER */
+   .info-principal-mobile{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   
+    .info-principal-mobile b{
+       letter-spacing: 6px;
+   }
+    .info-principal-mobile p{
+        color:white;
+        text-align: center;
+        letter-spacing: 2px;
+        padding:10px;
+        line-height: 4.5vh;
+    }
+     /** EMPIEZA PRODUCTOS MOBILE **/
+     .productos-mobile-container{
+        margin-top:50px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+
+     }
+     .fa-solid.fa-shield, .fa-solid.fa-display, .fa-solid.fa-comments, .fa-solid.fa-hand-holding-dollar, .fa-solid.fa-chart-line{
+        color:white;
+        font-size: 80px;
+    }
+    .fa-solid.fa-cart-shopping, .fa-solid.fa-globe{
+        color:white;
+        font-size: 80px;
+    }
+    .producto-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        color: white;
+        gap:20px;
+        font-weight: bolder;
+    }
+     /** TERMINA PRODUCTOS MOBILE **/
+
+    /** MODIFICO CONTACTO CONTAINER **/
+    .contacto-container{
+        width:100%;
+        border:1px solid #343a40;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:10px;
+        /*background-image:url(https://bestwallpapers.in/wp-content/uploads/2018/04/keyboard-blue-backlit-bokeh-4k-wallpaper-3840x2400.jpg);*/
+        background-size: cover;  
+    }
+
+     
+    
+
+
+    
+
+    
+
+    
    
    
     
