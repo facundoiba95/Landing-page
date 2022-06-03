@@ -7,10 +7,12 @@
     
 }
 body{
-    background-color: #131517;
-    background-image:url(https://wallpapers-hub.art/wallpaper-images/38127.jpg);
+    /*background-color: #131517;*/
+    background-color: rgb(23, 23, 23);
+    /*background-image:url(https://wallpapers-hub.art/wallpaper-images/38127.jpg);*/
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 header{
     position: sticky;
@@ -26,6 +28,7 @@ header{
 main{
     display: flex;
     flex-direction: column;
+    
     flex-wrap: wrap;
 }
 
@@ -139,10 +142,12 @@ background-color: white;
     height: 700px;
     font-size: 2rem;
     margin-bottom:40px;
-    background-image: url(../img/wallpaper6.jpg);
-    background-size: cover;
+   /* background-image: url(../img/wallpaper6.jpg);*/
+    /*background-image: url(../img/LISZT.png);*/
+    background-size: center;
     background-position: 10%;
     background-repeat: no-repeat;
+    background-color: rgb(23, 23, 23);
 
 }
 .info-principal{
@@ -258,15 +263,17 @@ opacity:1;
 /** ACA TERMINA INFO PRINCIPAL **/
 
 /** ACA EMPIEZA INFO ADICIONAL **/
+
 .info-adicional-container{
     width:100%;
-    height: 555px;
+    height: 547px;
     background-size:100%;
     background-repeat: no-repeat;
-   /* background-image: url(../img/613.jpg);*/
+    background-color: rgb(23, 23, 23);
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     flex-wrap: wrap;
 }
 .contenido-adicional{
@@ -280,17 +287,95 @@ opacity:1;
     color:white; 
 }
 .contenido-adicional p{
-    color: #c2cad2;
+    color: black;
     font-weight: bolder;
     font-size: 1.2rem;
     letter-spacing: 1.5px;
     line-height:5vh;
     width: 1000px;
     height: auto;
-    word-wrap: break-word;
     margin-bottom: 8px;
-    border-bottom: 1px solid #343a40;
 }
+
+
+.info-adicional-container{
+    display: none;
+    
+}
+.informacion-adicional-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:100px;
+}
+.responsive-design{
+    background-image: url(../img/descarga2.jpg);
+    background-size: cover;
+    background-position: 10%;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.responsive-design h3{
+    display: flex;
+    color: white;
+    font-size: 5rem;
+    letter-spacing: 0.4rem;
+}
+.parrafo-info-adicional{
+    display: none;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    width: 900px;
+}
+.responsive-design h3:hover{
+    display: none;
+    transition: all 1s;
+
+}
+.responsive-design h3:hover ~ .parrafo-info-adicional{
+    display: block;
+}
+.asesoramiento{
+    background-image: url(../img/asesor.jfif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.asesoramiento h3{
+    display: flex;
+    color: white;
+    font-size: 5rem;
+    letter-spacing: 0.4rem;
+}
+.asesoramiento h3:hover{
+    display: none;
+    transition: all 1s;
+}
+.asesoramiento h3:hover ~ .parrafo-info-adicional{
+    display: block;
+}
+.expandituhorizonte{
+    background-image: url(../img/asesor.jfif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
 
 /** ACA TERMINA INFO ADICIONAL **/
 
@@ -480,6 +565,7 @@ opacity:1;
     }
     
     header{
+        width: 100%;
         height: 50px;
         background-color: black;
         justify-content: flex-start;
