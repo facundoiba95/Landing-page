@@ -12,6 +12,7 @@ body{
     /*background-image:url(https://wallpapers-hub.art/wallpaper-images/38127.jpg);*/
     background-size: cover;
     background-repeat: no-repeat;
+    width:100%;
     
 }
 header{
@@ -22,13 +23,14 @@ header{
     align-items: center;
     width: 100%;
     height:75px;
-    background-color:rgba(15, 13, 13, 0.662);
-    opacity:1;
+    /*background-color:rgba(15, 13, 13, 0.662);*/
+    background-color: black;
+    opacity: 1;
 }
 main{
     display: flex;
     flex-direction: column;
-    
+    width:100%;
     flex-wrap: wrap;
 }
 
@@ -52,7 +54,9 @@ main{
     justify-content: center;
     width: 100%;
     height: 75px;
-    background-color:rgba(16, 16, 16, 0.919);
+    /*background-color:rgba(16, 16, 16, 0.919);*/
+    background-color: black;
+    opacity: 1;
 }
 .menu{
     display: flex;
@@ -177,7 +181,7 @@ background-color: white;
     font-size: 1.2rem;
     letter-spacing: 1px;
     line-height:4vh;
-    border-top:1px solid #343a40;
+   /* border-top:1px solid #343a40;*/
     padding: 20px 0;
 }
 .contenido b{
@@ -196,14 +200,27 @@ background-color: white;
     padding:15px;
     color:white;
     cursor:pointer;
-    opacity:0.9;
+    
 }
 .btnAsesor:hover, .btnMasinformacion:hover{
     transition: all 0.3s;
     border:1px solid greenyellow;
 }
-.contacto-container{
+/*.contacto-container{
     width:500px;
+    border:1px solid #343a40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    /*background-image:url(https://bestwallpapers.in/wp-content/uploads/2018/04/keyboard-blue-backlit-bokeh-4k-wallpaper-3840x2400.jpg);
+     background-size: cover; 
+   }*/
+    
+
+.contacto-container{
+    width:100%;
     border:1px solid #343a40;
     display: flex;
     flex-direction: column;
@@ -258,7 +275,6 @@ opacity:1;
 
 
 }
-   
 
 /** ACA TERMINA INFO PRINCIPAL **/
 
@@ -295,6 +311,7 @@ opacity:1;
     width: 1000px;
     height: auto;
     margin-bottom: 8px;
+
 }
 
 
@@ -307,6 +324,7 @@ opacity:1;
     flex-direction: column;
     justify-content: center;
     gap:100px;
+
 }
 .responsive-design{
     background-image: url(../img/descarga2.jpg);
@@ -323,6 +341,7 @@ opacity:1;
     color: white;
     font-size: 5rem;
     letter-spacing: 0.4rem;
+    text-align: center;
 }
 .parrafo-info-adicional{
     display: none;
@@ -337,7 +356,8 @@ opacity:1;
 
 }
 .responsive-design h3:hover ~ .parrafo-info-adicional{
-    display: block;
+    display:flex;
+
 }
 .asesoramiento{
     background-image: url(../img/asesor.jfif);
@@ -363,8 +383,9 @@ opacity:1;
     display: block;
 }
 .expandituhorizonte{
-    background-image: url(../img/asesor.jfif);
+    background-image: url(../img/NY.jpg);
     background-size:cover;
+    background-position: 40% 55%;
     background-repeat: no-repeat;
     width: 100%;
     height: 400px;
@@ -372,6 +393,22 @@ opacity:1;
     justify-content: center;
     align-items: center;
 }
+.expandituhorizonte h3{
+    display: flex;
+   
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    letter-spacing: 0.4rem;
+}
+.expandituhorizonte h3:hover{
+    display: none;
+    transition: all 1s;
+}
+.expandituhorizonte h3:hover ~ .parrafo-info-adicional{
+    display: block;
+}
+
 
 
 
@@ -556,6 +593,22 @@ opacity:1;
         flex-direction: column;
         align-items: center;
     }
+   
+    
+    header{
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        justify-content: flex-start;
+        position: sticky;
+        top:0;
+        padding:10px;
+    }
+    body{
+        background-color: black;
+        background-image: none;
+        width:100vw;
+    }
     footer{
         width: 100%;
         display: flex;
@@ -563,22 +616,10 @@ opacity:1;
         align-items: center;
         justify-content: center;
     }
-    
-    header{
-        width: 100%;
-        height: 50px;
-        background-color: black;
-        justify-content: flex-start;
-        margin-left: 10px;
-        position: sticky;
-        top:0;
-    }
-    body{
-        background-color: black;
-        background-image: none;
-    }
     .nav-bar-mobile-container{
        display: flex;
+       width:100%;
+       background-color: black;
     }
     .fa-solid.fa-bars{
         color:white;
@@ -627,6 +668,14 @@ opacity:1;
         letter-spacing: 2px;
         padding:10px;
         line-height: 4.5vh;
+    }
+    /** MODIFICO INFORMACION-ADICIONAL-CONTAINER **/
+    .informacion-adicional-container{
+     width:100%;
+    }
+    .asesoramiento h3,.responsive-design h3, .expandituhorizonte h3{
+        font-size: 3rem;
+        letter-spacing: 0.3rem;
     }
      /** EMPIEZA PRODUCTOS MOBILE **/
      .productos-mobile-container{
