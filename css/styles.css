@@ -728,6 +728,37 @@ footer img {
 }
 @media (max-width: 321px){
 
+    /** MODIFICO INFO PRINCIPAL CONTAINER */
+    .contenido h1 {
+        font-size: 3rem;
+    }
+    .buttons{
+        display: flex;
+        gap: 10px;
+    }
+    /***************/
+
+    /** MODIFIQUE SERVICIOS CONTAINER */
+
+    .overlay2:hover p{
+        margin: 150px auto;
+        width: auto;
+    }
+
+    /***************/
+
+    /* MODIFIQUE WORKPROGRESS */
+
+    .workprogress h2{
+        font-size: 1.5rem;
+        font-weight:900;
+        margin-bottom: 10px;
+    }
+    .workprogress h4{
+        font-size: 1.2rem;
+    }
+    
+    /** MODIFIQUE WORKS CONTAINER */
     .works img{
         width: 200px;
     }
@@ -738,5 +769,7 @@ footer img {
         font-size: 1.3rem;
         letter-spacing: 3px;
     }
+    /**********/
+
 }
 
