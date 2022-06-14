@@ -343,10 +343,6 @@ border-radius: 5px;
 .item h3, .item p{
     text-align: center;
 }
-.fa-solid.fa-angle-right{
-    font-size: 2rem;
-    
-}
 .fa-solid.fa-circle-1, .fa-solid.fa-circle-2, .fa-solid.fa-circle-3, .fa-solid.fa-circle-4{
     display: none;
 }
@@ -554,9 +550,7 @@ footer img {
         height: auto;
         
     }
-    .fa-solid.fa-angle-right{
-        display: none;
-    }
+    
     /********/
 
     /* MODIFICO WORKS CONTAINER */
