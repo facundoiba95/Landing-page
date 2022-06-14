@@ -698,6 +698,18 @@ footer img {
     }
     /**************/
 
+    /** MODIFICO WORKS CONTAINER **/
+    .works-container h2{
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+    }
+    .works img{
+        width: 300px;
+    }
+    .work{
+        width: 300px;
+    }
+
 }
 @media (max-width: 376px){
     /* MODIFICO WORKS CONTAINER */
@@ -715,7 +727,6 @@ footer img {
 }
 @media (max-width: 321px){
 
-    
     .works img{
         width: 200px;
     }
