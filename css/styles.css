@@ -707,6 +707,24 @@ footer img {
     .work{
         width: 300px;
     }
+    .works-container h2{
+        font-size: 1.3rem;
+        letter-spacing: 3px;
+    }
     
+}
+@media (max-width: 321px){
+
+    
+    .works img{
+        width: 200px;
+    }
+    .work{
+        width: 200px;
+    }
+    .works-container h2{
+        font-size: 1.3rem;
+        letter-spacing: 3px;
+    }
 }
 
