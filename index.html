@@ -4,169 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>Portfolio Facundo Ibañez</title>
 </head>
 <body>
     <header>
-        <div class="logo-header">
-            <img class="logo"src="./img/LISZT.png" alt="img logo">
-        </div>
-        <div class="nav-bar-container">
+        <img class="logo" src="./img/LISZT.png" alt="imagen logo">
+        <nav class="navbar-container">
             <ul class="menu">
-                <li class="menu-item"><a class="menu-link" href="#">Inicio</a></li>
-                <li class="menu-item container"><a class="menu-link" href="#">Servicios</a>
-                    <ul class="submenu">
-                       <li class="submenu-item"><a class="menu-link"href="#">Servicio 1</a></li>
-                       <li class="submenu-item"><a class="menu-link"href="#">Servicio 2</a></li>
-                       <li class="submenu-item"><a class="menu-link"href="#">Servicio 3</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item"><a class="menu-link" href="#">Clientes</a>
-                    <ul class="submenu">
-                        <li class="submenu-item"><a class="menu-link"href="#">Cliente 1</a></li>
-                        <li class="submenu-item"><a class="menu-link"href="#">Cliente 2</a></li>
-                        <li class="submenu-item"><a class="menu-link"href="#">Cliente 3</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item"><a class="menu-link" href="#">Contacto</a>
-                </li>
+                <li class="menu-item"><a href="#" class="menu-link">Inicio</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Servicios</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Clientes</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Contacto</a></li>
             </ul>
-        </div>
-        <div class="items-right">
-            <input type="search" placeholder="Buscar"> 
-            <i class="fa-solid fa-user"><a href="#"></a></i>   
-            <i class="fa-solid fa-cart-shopping"><a href="#"></a></i>
-        </div>
-        <div class="nav-bar-mobile-container">
-            <div class="menu-hamburguesa">
-                <label for="menu-container">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
-                <input type="checkbox" class="menu-container" id="menu-container" />
-                        <ul class="menu-mobile">
-                            <li class="menu-item-mobile"><a href="#" class="menu-link-mobile">Inicio</a></li>
-                            <li class="menu-item-mobile container"><a href="#" class="menu-link-mobile">Servicios</a></label>
-                               <ul class="submenu-mobile">
-                                <li class="submenu-item-mobile"><a href="#" class="submenu-link-mobile">Servicio 1</a></li>
-                                <li class="submenu-item-mobile"><a href="#" class="submenu-link-mobile">Servicio 2</a></li>
-                                <li class="submenu-item-mobile"><a href="#" class="submenu-link-mobile">Servicio 3</a></li>
-                              </ul>
-                            </li>
-                            <li class="menu-item-mobile"><a href="#" class="menu-link-mobile">Clientes</a></li>
-                            <li class="menu-item-mobile"><a href="#" class="menu-link-mobile">Contacto</a></li>
-                        </ul>    
-            </div>
-        </div>
+        </nav>
+        <nav class="navbar-hamburguesa">
+            <label for="menu-button">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" class="menu-button" id="menu-button">
+            <ul class="menu-responsive">
+                <li class="menu-item"><a href="#" class="menu-link">Inicio</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Servicios</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Clientes</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-         <section class="info-principal-container"> 
+        <section class="info-principal-container">
             <div class="info-principal">
-                <div class="contenido">
+                <div  class="contenido">
                     <h1>Bienvenido a LISZT!</h1>
-                    <p><b>Conecta tu proyecto al mundo.</b> Con nosotros podras concretar tus ideas, expandir y elevar tu negocio o emprendimiento al siguiente nivel.
-                    Contamos con las mejores soluciones para tus necesidades web. 
-                    </p>
-                    <h4>Conoce nuestras propuestas!</h4>
+                    <p><b>Conecta tu proyecto al mundo.</b> Con nosotros podras concretar tus ideas, expandir y elevar tu negocio o emprendimiento al siguiente nivel. Contamos con las mejores soluciones para tus necesidades web.</p>
+                    <h3>Conoce nuestras propuestas!</h3>
                     <div class="buttons">
-                        <button class="btnMasinformacion">Mas Informacion</button>
-                        <button class="btnAsesor">Contactar con un asesor</button>
+                        <button class="btnMasinformacion">Mas informacion</button>
+                        <button class="btnAsesor">Contactar un asesor</button>
                     </div>
                 </div>
-                <div class="contacto-mobile-container">
-                    <div class="contacto-container"> 
-                        <h4>CONTACTANOS</h4>
-                        <form class="datos-personales">
-                            <input type="text" id="nombre" placeholder="Nombre">
-                            <input type="text" id="apellido" placeholder="Apellido">
-                            <input type="email" id="email" placeholder="Email">
-                            <input type="number" id="number" placeholder="Telefono">
-                            <textarea name="descripcion" id="" cols="30" rows="10" placeholder="Indicanos tu pagina web y comentanos una idea general de tu proyecto."></textarea>
-                            <button class="btnEnviar">Enviar</button>
-                        </form>
-                    </div>
+                <div class="imagen">
+                    <img class="imagen-informacion" src="./img/personastrabajandopc.jpg" alt="personas trabajando">
                 </div>
             </div>
         </section>
-        <section class="info-principal-mobile-container">
-            <div class="info-principal-mobile">
-                <img class="logo-mobile" src="./img/LISZT.png" alt="Logo LISZT">
-                <h1>BIENVENIDO!</h1>
-                <p><b>Conecta tu proyecto al mundo.</b> Con nosotros podras concretar tus ideas, expandir y elevar tu negocio o emprendimiento al siguiente nivel.
-                    Contamos con las mejores soluciones para tus necesidades web. 
-                    </p>
-            </div>
-            <div class="productos-mobile-container">
-                <div class="producto-mobile">
-                    <i class="fa-solid fa-shield"></i>
-                    <p>Seguridad</p>
-                </div>
-                <div class="producto-mobile">
-                    <i class="fa-solid fa-display"></i>
-                    <p>Responsive Design</p>
-                </div>
-                <div class="producto-mobile">
-                    <i class="fa-solid fa-comments"></i>
-                    <p>Rapida Respuesta</p>
-                </div>
-                <div class="producto-mobile">
-                    <i class="fa-solid fa-hand-holding-dollar"></i>  
-                    <p>Facilidad de Pago</p>
-                </div>
-                <div class="producto-mobile">
-                    <i class="fa-solid fa-chart-line"></i>
-                    <p>Aumenta tus ventas</p>
-                </div>
-                <div class="producto-mobile">
-                    <i class="fa-solid fa-cart-shopping"></i> 
-                    <p>Tienda Online</p>
-                </div>
-                <div class="producto-mobile">
-                    <i class="fa-solid fa-globe"></i>
-                    <p>Sitio Web</p>
-                </div>
-                <div class="contacto-mobile-container">
-                    <div class="contacto-container"> 
-                        <h4>CONTACTANOS</h4>
-                        <form class="datos-personales">
-                            <input type="text" id="nombre" placeholder="Nombre">
-                            <input type="text" id="apellido" placeholder="Apellido">
-                            <input type="email" id="email" placeholder="Email">
-                            <input type="number" id="number" placeholder="Telefono">
-                            <textarea name="descripcion" id="" cols="30" rows="10" placeholder="Indicanos tu pagina web y comentanos una idea general de tu proyecto."></textarea>
-                            <button class="btnEnviar">Enviar</button>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section class="informacion-adicional-container">
-            <div class="responsive-design">
-                <h3>Responsive Design</h3>
-                <div class="parrafo-info-adicional">
-                <p>En LISZT nos enfocamos en que tu proyecto sea atractivo visualmente, de funcionalidad ágil y optima con un diseño adaptable a cada dispositivo.    
-                </p>
-                </div>
-            </div>
-            <div class="asesoramiento">
-                <h3>Asesoramiento</h3> 
-                <div class="parrafo-info-adicional">
-                    <p>Te ofrecemos seguimiento personalizado, variedad de diseños segun la propuesta y necesidades que tengas.
-                        Servicios de post-entrega tales como mantenimiento de tu web, asesoramiento de novedaedes y asi mantener tu pagina actualizada segun el mercado, y mas beneficios exlusivos para que tu marca transmita confianza, seguridad, originalidad y que por sobre todo sea atractiva y funcional.
-                    </p>
-                </div>
-            </div>
-            <div class="expandituhorizonte">
-                <h3>Expandi tu horizonte</h3>
-                <div class="parrafo-info-adicional">
-                    <p>Nuestros expertos en desarrollo web y Marketing lograran que tu web sea exitosa, aumentes tus ventas, ampliaras el horizonte de clientes y captaras miles de nuevos interesados en tu proyecto, dandole una excelente imagen a tu empresa, negocio o institución.</p>
-                </div>
-            </div>
-        </section>
-     
-        <div class="productos-container">
+        <section class="productos-container">
                 <div class="producto">
                     <i class="fa-solid fa-shield"></i>                    <h3>Seguridad</h3>
                     <p>Seguridad, protección y confianza para tus datos y de tus clientes.</p>
@@ -186,16 +69,105 @@
                     <h3>Facilidades de pago</h3>
                     <p>Ofrecemos diversos metodos de pago. Consulta y elegí el mas acorde a vos.</p>
                 </div>
-        </div>
-    </main>
-    <footer>
-        <div class="elementos-footer-container">
-            <div class="elementos-footer">
+        </section>
+        <section class="servicios-container">
+            <div class="servicio">
+                <div class="responsive-design">
+                    <h3>Responsive Design</h3>
+                    <div class="overlay1">
+                            <p>En LISZT nos enfocamos en que tu proyecto sea atractivo visualmente, de funcionalidad ágil y optima con un diseño adaptable a cada dispositivo.    
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="servicio">
+                <div class="asesoramiento">
+                    <h3>Asesoramiento</h3> 
+                    <div class="overlay2">
+                            <p>Te ofrecemos seguimiento personalizado, variedad de diseños segun la propuesta y necesidades que tengas.
+                                Servicios de post-entrega tales como mantenimiento de tu web, asesoramiento de novedaedes y asi mantener tu pagina actualizada segun el mercado, y mas beneficios exlusivos para que tu marca transmita confianza, seguridad, originalidad y que por sobre todo sea atractiva y funcional.
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="servicio">
+                <div class="expandituhorizonte">
+                    <h3>Expandi tu horizonte</h3>
+                    <div class="overlay3">
+                        <p>Nuestros expertos en desarrollo web y Marketing lograran que tu web sea exitosa, aumentes tus ventas, ampliaras el horizonte de clientes y captaras miles de nuevos interesados en tu proyecto, dandole una excelente imagen a tu empresa, negocio o institución.</p>
+                    </div>
+                </div>
+            </div>
+                
+                
+                
+        </section>
+        <section class="workprogress-container">
+            <div class="workprogress">
+                <h2>Como trabajamos?</h2>
+                <h4>Te mostramos el proceso desde 0</h4>
+                <div class="workprogress-pasos">
+                    <div class="item">
+                       <i class="fa-solid fa-1"></i>
+                       <h3>Consulta y contacto</h3> 
+                       <p>Nos envias tu consulta y nos ponemos en contacto con vos</p>
+                    </div>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <div class="item">
+                        <i class="fa-solid fa-2"></i>
+                        <h3>Eleccion de diseño</h3>
+                        <p>Te mostramos nuestros trabajo realizados, intercambiamos ideas y trabajamos en crear tu pagina personalizada desde 0.</p>
+                    </div>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <div class="item">
+                        <i class="fa-solid fa-3"></i>
+                        <h3>Prototipo de web y testing</h3>
+                        <p>Desarrollamos el prototipo de tu web y la testeamos para que sea optima, atractiva y funcional.</p>
+                    </div>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <div class="item">
+                        <i class="fa-solid fa-4"></i>
+                        <h3>Trabajo finalizado</h3>
+                        <p>Entregamos tu proyecto listo para ser utilizado!</p>
+                    </div>
+                </div>      
+            </div>
+        </section>
+        <section class="works-container">
+            <h2>Nuestros trabajos</h2>
+            <div class="works">
+               <div class="work">
+                    <img src="./img/LISZT.png" alt="">
+                    <div class="btnOverlay">
+                        <button>Ver Proyecto</button>
+                    </div>  
+               </div>
+               <div class="work">
+                    <img src="./img/LISZT.png" alt="">
+                    <div class="btnOverlay">
+                        <button>Ver Proyecto</button>
+                    </div>
+               </div>
+               <div class="work">
+                    <img src="./img/LISZT.png" alt="">
+                    <div class="btnOverlay">
+                        <button>Ver Proyecto</button>
+                    </div>
+               </div>
+               <div class="work">
+                    <img src="./img/LISZT.png" alt="">
+                    <div class="btnOverlay">
+                        <button>Ver Proyecto</button>
+                    </div>
+               </div>
+            </div>
+        </section>
+        <section class="contacto-container">
+            <div class="elementos-contacto">
                 <div class="contacto">
                     <h4>Contacto</h4>
                     <i class="fa-solid fa-envelope"><p>facundoiba95@gmail.com</p></i>
                 <i class="fa-brands fa-whatsapp"><p>3513230038</p></i>
-    
                 </div>
                 <div class="redes">
                     <h4>Redes</h4>
@@ -211,7 +183,10 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6807.446551468836!2d-64.18172034317877!3d-31.44928434494059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a380353f6649%3A0xec02c81a5950fd3b!2sClub%20Atl%C3%A9tico%20Talleres%20(C.A.T.)!5e0!3m2!1ses!2sar!4v1653583989169!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-        </div>
+        </section>
+    </main>
+    <footer>
+        <img src="./img/LISZT.png" alt="logo liszt">
     </footer>
 </body>
 </html>
